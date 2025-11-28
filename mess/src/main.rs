@@ -9,5 +9,5 @@ fn main() {
     println!("Enter your age");
     io::stdin().read_line(&mut age).expect("Couldn't read line");
     let age: u32 = age.trim().parse().expect("Enter a valid age!");
-    println!("Name: {}\nAge: {}", name, age)
+    println!("Name: {}\nAge: {}", name.trim(), age)
 }
